@@ -635,6 +635,12 @@ section h2::after {
     padding: 10px;
     text-align: center;
   }  
+    .menu-btn {
+    position: absolute; /* Или fixed/absolute, если нужно */
+    left: -10px; /* Поднимите кнопку вверх */
+    margin-top: 0; /* Уберите отступы, если есть */
+
+  }
 }
   
   /* Стиль для планшетов */
