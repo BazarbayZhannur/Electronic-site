@@ -659,88 +659,95 @@ body {
     }
 }
 
-/* Мобильные устройства */
 @media screen and (max-width: 768px) {
-    .product {
-        width: 100%; /* Для мобильных устройств карточки на всю ширину */
-    }
+  body {
+    font-size: 14px;
+  }
 
-    .nav ul {
-        flex-direction: column;
-        align-items: center;
-    }
+  .header {
+    font-size: 1rem;
+    width: 10000px;
+    background-color: #000000;
+  }
 
-    .cart-btn,
-    .buy-button {
-        font-size: 14px;
-        padding: 8px 16px;
-    }
+  .share-container {
+    bottom: 15px;
+    right: 5px;
+    padding: 5px;
+  }
 
-    .header {
-        font-size: 1rem;
-        padding: 10px 0;
-    }
-}
+  .card {
+    padding: 10px;
+  }
 
-/* Очень маленькие экраны */
-@media screen and (max-width: 480px) {
-    .cart {
-        top: auto;
-        bottom: 10px;
-        right: 10px;
-    }
+  .nav {
+    background-color: #000000;
+  }
 
-    .products img {
-        width: 100%; /* Изображения на всю ширину */
-        height: auto;
-    }
-
-    .product {
-        margin-bottom: 10px;
-    }
-
-    .buy-button {
-        font-size: 14px;
-        padding: 8px 16px;
-    }
-
-    .nav ul {
-        display: none; /* Скрываем на мобильных */
-        flex-direction: column;
-        position: absolute;
-        top: 60px;
-        background: #000;
-        width: 100%;
-    }
-
-    .menu-btn {
-        display: block; /* Показываем кнопку меню */
-    }
-
-    .share-container {
-        display: none; /* Скрываем элементы, которые не нужны на маленьких экранах */
-    }
-}
-
-@media screen and (min-width: 769px) {
-    .nav ul {
-        display: flex; /* Показываем стандартное меню для экрана больше 768px */
-        position: static;
-        background: none;
-        width: auto;
-    }
-
-    .menu-btn {
-        display: none; /* Прячем кнопку меню для экранов больше 768px */
-    }
-}
-
-/* Стиль для гамбургер-меню */
-.menu-btn {
+  .navig {
     display: none;
-    background-color: #333;
+    background-color: #fff;
+  }
+
+  .menu-btn {
+    margin-top: -25px;
+ }
+
+  .cart-btn {
+    margin-top: 40px;
+    margin-left: 620px;
+    background-color: #575757;
     color: white;
-    padding: 10px 15px;
-    cursor: pointer;
+  }
 }
+
+@media screen and (max-width: 480px) {
+  body {
+    font-size: 14px;
+  }
+
+  .header {
+    font-size: 1rem;
+    width: 425px;
+    background-color: #000000;
+  }
+
+  .share-container {
+    bottom: 5px;
+    right: 5px;
+    padding: 5px;
+  }
+
+  .card {
+    padding: 10px;
+  }
+
+  .nav {
+    background-color: #f4f4f4;
+  }
+
+  .navig {
+    display: none;
+  }
+}  
+@media screen and (max-width: 1024px) {
+  body {
+    font-size: 14px;
+  }
+  .header {
+    font-size: 1rem;
+    width: 100%;
+    background-color: #000000;
+  }
+  .share-container {
+    bottom: 5px;
+    right: 5px;
+    padding: 5px;
+  }
+  .card {
+    padding: 10px;
+  }
+  .cart-btn {
+    margin-left: 900px;
+  }
 }
