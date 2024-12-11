@@ -742,6 +742,6 @@ body {
   }
 
   .cart-btn {
-    margin-left: auto;
+    margin-left: auto !important;
   }
 }
