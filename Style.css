@@ -375,7 +375,7 @@ section h2::after {
     justify-content: center; 
     flex-wrap: wrap;
 }
-/* Отзывы */
+/* Отзывы 
 .reviews {
     margin-bottom: 40px;
 }
@@ -394,7 +394,7 @@ section h2::after {
     font-size: 22px;
     color: #333;
     margin-bottom: 20px;
-}
+} */
 
 .stars {
     color: #ff7e5f;
@@ -618,65 +618,105 @@ section h2::after {
     font-size: 0.9em;
 }
 
-/* Стиль для мобильных устройств */
-@media only screen and (max-width: 600px) {
-  body {
-    font-size: 16px;
-    margin: 0;
-    padding: 0;
-  }
   
-  .container {
-    width: 100%;
-    padding: 10px;
-  }
-  
-  header, footer {
-    padding: 10px;
-    text-align: center;
-  }  
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+  color: #333;
+  text-align: center;
+  overflow-x: hidden;
 }
-  
-  /* Стиль для планшетов */
-  @media only screen and (min-width: 601px) and (max-width: 1024px) {
-    .container {
-      padding: 20px;
-    }
-  
-    header {
-      text-align: left;
-    }
+
+.header {
+  text-align: center;
+  background: linear-gradient(to right, #010101, #000000);
+  color: white;
+  padding: 20px 0;
+  top: 0;
+  z-index: 10;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+
+.card {
+  margin: 20px auto;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  max-width: 400px;
+}
+
+@media screen and (max-width: 768px) {
+  body {
+    font-size: 14px;
   }
-  
-  /* Стиль для десктопов */
-  @media only screen and (min-width: 1025px) {
-    .container {
-      width: 80%;
-      margin: 0 auto;
-    }
-  
-    header {
-      text-align: left;
-    }
+
+  .header {
+    font-size: 1rem;
+    width: 800px;
+    background-color: #000000;
   }
-  .container {
-    display: flex;
-    flex-wrap: wrap;
+
+  .share-container {
+    bottom: 15px;
+    right: 5px;
+    padding: 5px;
   }
-  
-  .item {
-    flex: 1 1 100%; /* на мобильных устройствах элементы будут занимать всю ширину */
+
+  .card {
+    padding: 10px;
   }
-  
-  @media only screen and (min-width: 600px) {
-    .item {
-      flex: 1 1 48%; /* на экранах более 600px элементы будут занимать 48% */
-    }
+
+  .nav {
+    background-color: #000000;
   }
-  
-  @media only screen and (min-width: 1024px) {
-    .item {
-      flex: 1 1 30%; /* на десктопах элементы будут занимать 30% */
-    }
+
+  .navig {
+    display: none;
+    background-color: #fff;
   }
-      
+
+  .menu-btn {
+    margin-top: -25px;
+ }
+
+  .cart-btn {
+    margin-top: 40px;
+    margin-left: 620px;
+    background-color: #575757;
+    color: white;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  body {
+    font-size: 14px;
+  }
+
+  .header {
+    font-size: 1rem;
+    width: 425px;
+    background-color: #000000;
+  }
+
+  .share-container {
+    bottom: 5px;
+    right: 5px;
+    padding: 5px;
+  }
+
+  .card {
+    padding: 10px;
+  }
+
+  .nav {
+    background-color: #f4f4f4;
+  }
+
+  .navig {
+    display: none;
+  }
+}  
